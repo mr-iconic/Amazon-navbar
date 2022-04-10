@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: rgb(19 33 42);;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1em 0 0.8em;
+}
+.leftside{
+    display: flex;
+    align-items: center;
+} 
+
+.logo{
+    filter: invert(100%);
+    text-align: center;
+    margin: 1px;
+    margin-bottom: -5px;
+    padding: 6px 8px 0 0; 
+    height: 80px;
+}
+.dfex{
+    display: flex;
+    align-items: center;
+}
+.item{
+    margin-left: 1em;
+    padding: 10px 10px;
+}
+.item:hover{
+    border: 1px solid rgb(244, 241, 241);
+    border-radius: 2px;
+    margin-left: 1em;
+    transition: 0.5s ease;
+}
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+a:hover{
+    border: 1px solid white;
+    margin: -1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+a span{
+    font-size: 1em;
+    margin-left: -10px;
+}
+p{
+    font-size: 1em;
+}
+.item i{
+    padding: 0 5px ;
+    cursor: pointer;
+}
+nav input{
+    width: 700px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #000;
+}
+nav button{
+    padding: 10px 10px;
+    color: #000;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    cursor:pointer;
+}
+.all{
+    background: white;
+    border-radius: 5px 2px 2px 5px;
+    margin-right: -0.2em;
+}
+.all i{
+    color: #000;
+}
+nav .searchbar{
+    padding: 0.52em 0.8em;
+    margin: -0.25em;
+    background: rgb(249, 166, 12);
+    border-radius: 0 5px 5px 0;
+}
+.content:hover{
+    border: 2px solid white;
+    transition: 0.5s ease;
+}
+.navbar2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5 48 56);
+}
+.sub_bar{
+    display: flex;
+    align-items: center;
+    
+}
+.navbar2  a{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0.5em 0 0.3em;
+}
+.navbar2  a:hover{
+   border: 2px solid white;
+   transition: 0.5s ease;
+}
