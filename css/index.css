@@ -221,7 +221,7 @@ nav .searchbar{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-right: 0.8em;
+        margin-right: 1.5em;
     }
     .signcart a{
         margin-left: 1em;
@@ -267,8 +267,11 @@ nav .searchbar{
     .secondrow{
         display: flex;
         justify-content: flex-start;
-        width: 90%;
+        width: 100%;
         background-color: rgb(5 48 56);;
-        margin: 0.5em 0 0.5em 3em;
+        margin: 0.5em 0 0.5em 0;
+    }
+    .secondrow p{
+        margin-left: 2em;
     }
 }
