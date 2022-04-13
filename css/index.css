@@ -221,7 +221,7 @@ nav .searchbar{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-right: 1em;
+        margin-right: 0.8em;
     }
     .signcart a{
         margin-left: 1em;
