@@ -9,34 +9,39 @@ nav{
     background-color: rgb(19 33 42);;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 1em 0 0.8em;
+    justify-content: stretch;
+    width: 100vw;
+}
+.menu{
+    display: none;
+}
+.mobilenav{
+    display: none;
+}
+.signcart{
+    display: none;
 }
 .leftside{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    width: 25%;
 } 
-
 .logo{
     filter: invert(100%);
     text-align: center;
-    margin: 1px;
-    margin-bottom: -5px;
-    padding: 6px 8px 0 0; 
-    height: 80px;
+    padding: 0.4em 0.5em 0 0; 
 }
 .dfex{
     display: flex;
     align-items: center;
 }
 .item{
-    margin-left: 1em;
-    padding: 10px 10px;
+    font-size: 1em;
 }
 .item:hover{
     border: 1px solid rgb(244, 241, 241);
     border-radius: 2px;
-    margin-left: 1em;
     transition: 0.5s ease;
 }
 a{
@@ -47,24 +52,26 @@ a{
 }
 a:hover{
     border: 1px solid white;
-    margin: -1px;
     border-radius: 3px;
     transition: 0.5s ease;
 }
 a span{
     font-size: 1em;
-    margin-left: -10px;
+    margin-left: -0.7em;
 }
 p{
     font-size: 1em;
 }
 .item i{
-    padding: 0 5px ;
+    padding: 0 0.4em ;
     cursor: pointer;
 }
+.middleside{
+    width: 50%;
+}
 nav input{
-    width: 700px;
-    padding: 10px;
+    width: 80%;
+    padding: 0.52em;
     font-size: 1.2em;
     border: none;
     outline: none;
@@ -81,17 +88,28 @@ nav button{
 }
 .all{
     background: white;
+    width: 12%;
+    font-size: 1.1em;
     border-radius: 5px 2px 2px 5px;
-    margin-right: -0.2em;
 }
 .all i{
     color: #000;
 }
 nav .searchbar{
+    width: 8%;
     padding: 0.52em 0.8em;
     margin: -0.25em;
     background: rgb(249, 166, 12);
     border-radius: 0 5px 5px 0;
+}
+.rightside{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content{
+    font-size: 1em;
 }
 .content:hover{
     border: 2px solid white;
@@ -100,19 +118,157 @@ nav .searchbar{
 .navbar2{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: rgb(5 48 56);
 }
 .sub_bar{
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
 .navbar2  a{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 0.5em 0 0.3em;
+    font-size: 0.7em;
+    justify-content: space-around;
 }
 .navbar2  a:hover{
    border: 2px solid white;
    transition: 0.5s ease;
+}
+@media(max-width:1400px){
+    .l{
+         display: none;
+    }
+
+}
+@media(max-width:1250px){
+    .j,.k{
+         display: none;
+    }
+}
+@media(max-width:1100px){
+    .h,.i{
+         display: none;
+    }
+}
+@media(max-width:950px){
+    .g{
+         display: none;
+    }
+    .content{
+        font-size: 0.8em;
+    }
+    .item{
+        font-size: 0.8em;
+    }
+    .all{
+        font-size: 0.7em;
+        padding: 1.5em 0 1.2em 0;
+    }
+    nav .searchbar{
+        padding-left: 0.4em;
+    }
+}
+@media(max-width:800px){
+    #menu{
+        display: block;
+        margin-top: 10px;
+        width: 2em;
+        height: 55px;
+        margin-left: 2em;
+        cursor: pointer;
+    }
+    #close{
+        display: block;
+        margin-left: 100%;
+        margin-top: 1%;
+        margin-right: -40px;
+        margin-top: 10px;
+       font-size: 2.5em;
+    }
+
+    .bar {
+        background-color: white;
+        display: block;
+        width: 100%;
+        height: 6px;
+        margin: 4px;
+        border-radius: 2px;
+        transition: 0.4 ease;
+    }
+    .item{
+        display: none;
+    }
+    #menuoption{
+        width: 50vw;
+        height: 100vh;
+        display: none;
+        background-color: rgb(239, 86, 86);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+    body nav{
+        flex-direction: column;
+    }
+    .leftside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .signcart{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 1em;
+    }
+    .signcart a{
+        margin-left: 1em;
+        font-size: 1.5em;
+    }
+    .all{
+        display: none;
+    }
+    .middleside{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .middleside input{
+        width: 92%;
+    }
+    .rightside{
+        display: none;
+    }
+    .navbar2{
+        display: none;
+    }
+    .mobilenav{
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        width: 100%;
+    }
+    .firstrow{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        width: 100%;
+        margin: 0.5em 0 0.5em 0;
+    }
+    .firstrow a{
+        margin-left: 2em;
+        font-size: 1.3em;
+    }
+    .sbc{
+        flex-direction: column;
+    }
+    .secondrow{
+        display: flex;
+        justify-content: flex-start;
+        width: 90%;
+        background-color: rgb(5 48 56);;
+        margin: 0.5em 0 0.5em 3em;
+    }
 }
